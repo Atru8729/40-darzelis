@@ -24,7 +24,7 @@ barsukai.addKid('Marsietis');
 barsukai.updateKidsLimit(3);
 // // "Barsukai" can not update kids limit right now.
 
-// barsukai.sayHi();
+barsukai.sayHi();
 // // "Barsukai" is visited by: Maryte, Jonukas, Stasyte, Kaziukas and Snaige.
 
 // barsukai.removeKid('Stasyte');
@@ -40,7 +40,6 @@ barsukai.updateKidsLimit(3);
 
 // barsukai.sayHi();
 // // "Barsukai" is visited by: Maryte, Kaziukas and Snaige.
-// // Stasyte has left "Barsukai" kindergarden.
 
 // barsukai.removeKid('Kaziukas');
 // // Kaziukas has left "Barsukai" kindergarden.

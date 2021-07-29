@@ -10,8 +10,11 @@ class Kindergarden {
     }
     updateKidsLimit(updatedKidsLimit) {
         this.kidsLimit = updatedKidsLimit;
-        console.log(`"${this.name}" can accept ${updatedKidsLimit} kids now.`);
-
+        if (this.list.length > updatedKidsLimit) {
+            console.log(`"${this.name}" can not update kids limit right now.`);
+        } else {
+            console.log(`"${this.name}" can accept ${updatedKidsLimit} kids now.`);
+        }
     }
     addKid(kidName) {
         if (this.list.length < this.kidsLimit) {
@@ -21,6 +24,9 @@ class Kindergarden {
         else {
             console.log(`${kidName} can not enter "${this.name}" kindergarden - it's at a full capacity of ${this.kidsLimit} kids.`);
         }
+    }
+    sayHi() {
+        console.log(`"${this.name}" is visited by: Maryte, Jonukas, Stasyte, Kaziukas and Snaige.`);
     }
 }
 
