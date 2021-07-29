@@ -1,19 +1,26 @@
 class Kindergarden {
-    constructor() {
+    constructor(name) {
+        this.name = name;
         this.kidsLimit = 3;
-        this.Kindergarden = ('Barsukai');
+        this.list = [];
     }
 
     intro() {
-        console.log(`"${this.Kindergarden}" can accept ${this.kidsLimit} kids.`);
+        console.log(`"${this.name}" can accept ${this.kidsLimit} kids.`);
     }
     updateKidsLimit(updatedKidsLimit) {
-        this.updatedKidsLimit = updatedKidsLimit;
-        console.log(`"${this.Kindergarden}" can accept ${updatedKidsLimit} kids now.`);
+        this.kidsLimit = updatedKidsLimit;
+        console.log(`"${this.name}" can accept ${updatedKidsLimit} kids now.`);
+
     }
     addKid(kidName) {
-        this.kidName = kidName;
-        console.log(`${this.kidName} has entered "${this.Kindergarden}" kindergarden.`);
+        if (this.list.length < this.kidsLimit) {
+            this.list.push(kidName);
+            console.log(`${kidName} has entered "${this.name}" kindergarden.`);
+        }
+        else {
+            console.log(`${kidName} can not enter "${this.name}" kindergarden - it's at a full capacity of ${this.kidsLimit} kids.`);
+        }
     }
 }
 

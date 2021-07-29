@@ -22,34 +22,34 @@ barsukai.addKid('Marsietis');
 // Marsietis can not enter "Barsukai" kindergarden - it's at a full capacity of 5 kids.
 
 barsukai.updateKidsLimit(3);
-// "Barsukai" can not update kids limit right now.
+// // "Barsukai" can not update kids limit right now.
 
-barsukai.sayHi();
-// "Barsukai" is visited by: Maryte, Jonukas, Stasyte, Kaziukas and Snaige.
+// barsukai.sayHi();
+// // "Barsukai" is visited by: Maryte, Jonukas, Stasyte, Kaziukas and Snaige.
 
-barsukai.removeKid('Stasyte');
-// Stasyte has left "Barsukai" kindergarden.
-barsukai.removeKid('Jonukas');
-// Jonukas has left "Barsukai" kindergarden.
+// barsukai.removeKid('Stasyte');
+// // Stasyte has left "Barsukai" kindergarden.
+// barsukai.removeKid('Jonukas');
+// // Jonukas has left "Barsukai" kindergarden.
 
-barsukai.updateKidsLimit(3);
-// "Barsukai" can accept 3 kids now.
+// barsukai.updateKidsLimit(3);
+// // "Barsukai" can accept 3 kids now.
 
-barsukai.addKid('Marsietis');
-// Marsietis can not enter "Barsukai" kindergarden - it's at a full capacity of 3 kids.
+// barsukai.addKid('Marsietis');
+// // Marsietis can not enter "Barsukai" kindergarden - it's at a full capacity of 3 kids.
 
-barsukai.sayHi();
-// "Barsukai" is visited by: Maryte, Kaziukas and Snaige.
-// Stasyte has left "Barsukai" kindergarden.
+// barsukai.sayHi();
+// // "Barsukai" is visited by: Maryte, Kaziukas and Snaige.
+// // Stasyte has left "Barsukai" kindergarden.
 
-barsukai.removeKid('Kaziukas');
-// Kaziukas has left "Barsukai" kindergarden.
+// barsukai.removeKid('Kaziukas');
+// // Kaziukas has left "Barsukai" kindergarden.
 
-barsukai.sayHi();
-// "Barsukai" is visited by: Maryte and Snaige.
+// barsukai.sayHi();
+// // "Barsukai" is visited by: Maryte and Snaige.
 
-barsukai.removeKid('Maryte');
-// Maryte has left "Barsukai" kindergarden.
+// barsukai.removeKid('Maryte');
+// // Maryte has left "Barsukai" kindergarden.
 
-barsukai.sayHi();
-// "Barsukai" is visited by: Snaige.
+// barsukai.sayHi();
+// // "Barsukai" is visited by: Snaige.
