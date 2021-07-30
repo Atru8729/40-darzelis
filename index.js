@@ -27,18 +27,18 @@ barsukai.updateKidsLimit(3);
 barsukai.sayHi();
 // // "Barsukai" is visited by: Maryte, Jonukas, Stasyte, Kaziukas and Snaige.
 
-// barsukai.removeKid('Stasyte');
+barsukai.removeKid('Stasyte');
 // // Stasyte has left "Barsukai" kindergarden.
-// barsukai.removeKid('Jonukas');
+barsukai.removeKid('Jonukas');
 // // Jonukas has left "Barsukai" kindergarden.
 
-// barsukai.updateKidsLimit(3);
+barsukai.updateKidsLimit(3);
 // // "Barsukai" can accept 3 kids now.
 
-// barsukai.addKid('Marsietis');
+//barsukai.addKid('Marsietis');
 // // Marsietis can not enter "Barsukai" kindergarden - it's at a full capacity of 3 kids.
 
-// barsukai.sayHi();
+//barsukai.sayHi();
 // // "Barsukai" is visited by: Maryte, Kaziukas and Snaige.
 
 // barsukai.removeKid('Kaziukas');

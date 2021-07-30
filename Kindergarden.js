@@ -8,12 +8,12 @@ class Kindergarden {
     intro() {
         console.log(`"${this.name}" can accept ${this.kidsLimit} kids.`);
     }
-    updateKidsLimit(updatedKidsLimit) {
-        this.kidsLimit = updatedKidsLimit;
-        if (this.list.length > updatedKidsLimit) {
+    updateKidsLimit(updatedLimit) {
+        this.kidsLimit = updatedLimit;
+        if (this.list.length > updatedLimit) {
             console.log(`"${this.name}" can not update kids limit right now.`);
         } else {
-            console.log(`"${this.name}" can accept ${updatedKidsLimit} kids now.`);
+            console.log(`"${this.name}" can accept ${updatedLimit} kids now.`);
         }
     }
     addKid(kidName) {
@@ -26,7 +26,28 @@ class Kindergarden {
         }
     }
     sayHi() {
-        console.log(`"${this.name}" is visited by: Maryte, Jonukas, Stasyte, Kaziukas and Snaige.`);
+        let sayHi = '';
+        for (let kidName of this.list) {
+            if (kidName === this.list[this.list.length - 1] && this.list.length >= 2) {
+                sayHi += `and ${kidName}`
+                break
+            }
+            sayHi += this.list.length > 1 ? `${kidName}, ` : `${kidName} `;
+        }
+        console.log(`"${this.name}" is visited by: ${sayHi}.`);
+    }
+    removeKid(kidName) {
+        let updatedList = [];
+        for (let i = 0; i < this.list.length; i++) {
+            if (i === kidName) {
+                updatedList.push(kidName);
+            } else {
+
+                this.list = updatedList;
+            }
+
+        }
+        console.log(`${kidName} has left "${this.name}" kindergarden.`);
     }
 }
 
